@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import Card from './Card';
 import Section from './Section';
 import React, { useEffect, useState } from 'react';
@@ -100,7 +100,7 @@ const Home = () => {
     return (
         <>
             <section style={{ height: "10vh" }}>
-                <div className='container-fluid d-flex align-items-center h-100' style={{ padding: "20px" }}>
+                <div className='container-fluid d-flex align-items-center justify-content-between h-100' style={{ padding: "20px" }}>
                     <div className='h-100 d-flex align-items-center'>
                         <DropdownButton variant={"light"} style={{ color: "black" }}
                             as={ButtonGroup}
@@ -123,6 +123,9 @@ const Home = () => {
                             <Dropdown.Item onClick={() => handleOrderingChange('status')}>Order by Status</Dropdown.Item>
                             <Dropdown.Item onClick={() => handleOrderingChange('priority')}>Order by Priority</Dropdown.Item>
                         </DropdownButton>
+                    </div>
+                    <div>
+                        <p className='mb-0'>Looking Ugly? Zoom Out!!</p>
                     </div>
                 </div>
             </section>
